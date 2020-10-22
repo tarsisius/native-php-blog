@@ -1,0 +1,414 @@
+
+body{
+    font-family: Segoe UI;
+    font-weight: 400;
+    margin: 0;
+    background-color: #eff3f9;
+  }
+  a{
+    text-decoration: unset;
+  }
+  ul{
+    padding: 0;
+    margin: 0;
+  }
+  input[type=checkbox],input[type=radio]{
+    box-sizing:border-box;
+    padding:0; 
+    outline:0
+  }
+  input{
+    outline:0
+  }
+  
+  .black{
+    background-color: #3c4043;
+    color: #ffffff;
+  }
+  .grey{
+    background-color: #88898a;
+    color: #ffffff;
+  }
+  .blue{
+    background-color: #acd3dd;
+    color: #1e8da9;
+  }
+  .red{
+    background-color: #f5e3d6;
+    color: #9e4c4c;
+  }
+  .green{
+    background-color: #71ebc7;
+    color: #076148;
+  }
+  .disabled{
+    display: none;
+  }
+  .alert {
+    border-radius: 0.25em;
+    padding: 1em 0.5em;
+    margin-bottom: 1em;
+    color: #fff;
+  }
+  button,input,optgroup,select,textarea{
+    vertical-align: middle;
+    border: 0;
+    margin:0;
+    font-family:inherit;
+    font-size:inherit;
+    line-height:inherit 
+  }
+  .table{
+    width: 100%;
+    background: #fff;
+    margin: 1em 0;
+    margin-top: 1em;
+    text-align: left;
+    color: rgba(0,0,0,.87);
+    border-collapse: separate;
+    border-spacing: 0;
+    font-weight: 400;
+  }
+  .table thead{
+    border-bottom: 1px solid #333;
+  }
+  .table thead th {
+    cursor: auto;
+    text-align: inherit;
+    color: rgba(0,0,0,.87);
+    padding: .92857143em .78571429em;
+    vertical-align: inherit;
+    font-style: none;
+    font-weight: 600;
+    text-transform: none;
+    border-bottom: 1px solid rgba(34,36,38,.1);
+    border-left: none;
+  }
+  .table tbody {
+    font-size: 90%;
+  }
+  .table td {
+    padding: .25em;
+    text-align: inherit;
+  }
+  .form input{
+    border-radius: 0.2em;
+    margin: 0 0 0.5em 0 ;
+    width: 100%;
+    padding: 0.75em;
+    background-color: #eee;
+    border:0 
+  }
+  .button{
+    position: relative;
+    box-sizing: border-box;
+    margin: 0.5em auto;
+    border-radius: 4px;
+    font-size: 14px;
+    display: inline-block;
+    padding: 0.35em 1em;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: inherit;
+    border: 0;
+    overflow: hidden;
+    outline: none;
+    transition: all .15s ease-in;
+  }
+  .button:hover, .button:focus {
+    opacity: .9;
+  }
+  .button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: currentColor;
+    visibility: hidden;
+    z-index: 2;
+  }
+  .button:not(:active):before {
+    -webkit-animation: ripple 0.4s cubic-bezier(0, 0, 0.2, 1);
+    animation: ripple 0.4s cubic-bezier(0, 0, 0.2, 1);
+    -webkit-transition: visibility .2s step-end;
+    transition: visibility .2s step-end;
+  }
+  .button:active:before {
+    visibility: visible;
+  }
+  .login-alert {
+    text-align: center;
+    color: #3333;
+  }
+  .form-horizontal {
+    margin: 0 
+  }
+  .form-login input{
+    border-radius: 0.2em;
+    margin: 0 0 0.5em 0 ;
+    width: 100%;
+    padding: 0.75em;
+    background-color: #eee;
+    border:0;
+    font-family: inherit;
+    color: #6e6e6e;
+  }
+  .container-login{
+    margin:10% auto;
+    max-width: 250px;
+    border-radius: 0.25em;
+    padding: 1em;
+  }
+  .container{
+      
+    padding-left: 15rem;
+  }
+  .inner {
+    padding: 1em;
+  }
+  .sidebar {
+    background-color: #fff;
+    width: 15rem;
+    height: 100vh;
+    position: fixed;
+  }
+  .sidebarMenuInner li{
+    list-style: none;
+    cursor: pointer;
+  }
+  .sidebarMenuInner li a{
+    padding: .75rem 10%;
+    display: inline-block;
+    width: -webkit-fill-available;
+    color:#1f2d41;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .sidebarMenuInner li.with-hover a:hover{
+    border-radius: .4em;
+    background: #fff;
+    columns: #333;
+  }
+  .thumb{
+    object-fit: contain;
+    height: 3em;
+    width: 4em;
+  }
+  .form-foto{
+    display: flex;
+  }
+  .foto{
+    margin-right:1em
+  }
+  .card{
+    margin-right: 1em;
+    width: 100%;
+    padding:1em;
+  }
+  .admin{
+    padding:1em;
+    background-color: #fff;
+  }
+  .card-outer{
+    display: flex;
+  }
+  .sidebar-menu {
+    display: none;
+  }
+  .form-horizontal {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+  .big{
+      float: right;
+      width: 83.33333333%;
+    }
+    .sm{
+        float: left;
+    width: 16.66666667%;
+  }
+  .form-group {
+    margin-bottom: 1.5em;
+}
+  .label-control{
+    font-size: 14px;
+    padding-top: 7px;
+      display: inline-block;
+  }
+  .form-control{
+    display: block;
+    width: -webkit-fill-available;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #e4e4e4;
+    border-radius: 0;
+    
+  
+  }
+  .submit{
+    margin-right: 0;
+  }
+  @keyframes ripple {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: .5;
+   }
+    100% {
+        width: 150px;
+        height: 150px;
+        opacity: 0;
+   }
+  }
+  @media only screen and (max-width: 768px) {
+    .sidebar{
+      padding: 0;
+        width: 100%;
+   }
+    .menu--off {
+      transition-duration: .8s;
+        float: left;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        z-index: 9;
+        left: -100%;
+   }
+    .menu--on {
+      transition-duration: .8s;
+        float: left;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+   }
+    .container {
+        float: none;
+        width: 96%;
+        margin: auto;
+        padding: 2%;
+   }
+    .sidebar-menu {
+        background: #ffff;
+    display: block;
+   }
+    .sidebar-menu button {
+        display: block;
+        border: none;
+        background: none;
+        outline: 0;
+   }
+    .sidebar-menu__icon {
+        padding:1.7em 1em;
+        cursor: pointer;
+   }
+    .sidebar-menu__layer {
+        display: block;
+        width: 40px;
+        height: 4px;
+        background: #eee;
+        position: relative;
+        animation-duration: 300ms;
+        animation-timing-function: ease-in-out;
+   }
+    .sidebar-menu__layer:before, .sidebar-menu__layer:after {
+        display: block;
+        width: inherit;
+        height: 4px;
+        position: absolute;
+        background: inherit;
+        left: 0;
+        content: '';
+        animation-duration: 300ms;
+        animation-timing-function: ease-in-out;
+   }
+    .sidebar-menu__layer:before {
+        bottom: 200%;
+   }
+    .sidebar-menu__layer:after {
+        top: 200%;
+   }
+    .sidebar-menu__icon--to-arrow {
+        animation-name: sidebar-menu__icon--slide;
+        animation-fill-mode: forwards;
+   }
+    .sidebar-menu__icon--to-arrow:before {
+        animation-name: sidebar-menu__icon--slide-before;
+        animation-fill-mode: forwards;
+   }
+    .sidebar-menu__icon--to-arrow:after {
+        animation-name: sidebar-menu__icon--slide-after;
+        animation-fill-mode: forwards;
+   }
+    .sidebar-menu__icon--from-arrow {
+        animation-name: sidebar-menu__icon--slide-from;
+   }
+    .sidebar-menu__icon--from-arrow:before {
+        animation-name: sidebar-menu__icon--slide-before-from;
+   }
+    .sidebar-menu__icon--from-arrow:after {
+        animation-name: sidebar-menu__icon--slide-after-from;
+   }
+    @keyframes sidebar-menu__icon--slide {
+        0% {
+       }
+        100% {
+            transform: rotate(180deg);
+       }
+   }
+    @keyframes sidebar-menu__icon--slide-before {
+        0% {
+       }
+        100% {
+            transform: rotate(45deg);
+            margin: 3% 37%;
+            width: 75%;
+       }
+   }
+    @keyframes sidebar-menu__icon--slide-after {
+        0% {
+       }
+        100% {
+            transform: rotate(-45deg);
+            margin: 3% 37%;
+            width: 75%;
+       }
+   }
+    @keyframes sidebar-menu__icon--slide-from {
+        0% {
+            transform: rotate(-180deg);
+       }
+        100% {
+       }
+   }
+    @keyframes sidebar-menu__icon--slide-before-from {
+        0% {
+            transform: rotate(45deg);
+            margin: 3% 37%;
+            width: 75%;
+       }
+        100% {
+       }
+   }
+    @keyframes sidebar-menu__icon--slide-after-from {
+        0% {
+            transform: rotate(-45deg);
+            margin: 3% 37%;
+            width: 75%;
+       }
+        100% {
+       }
+   }
+  }
