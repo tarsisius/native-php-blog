@@ -1,6 +1,9 @@
 # NATIVE PHP BLOG PLATFORM :elephant:
 ## SCREENSHOT :
 ![Homepage](/screenshoot/home.png?raw=true "Homepage")
+![Admin](/screenshoot/admin.png?raw=true "Admin")
+![Admin](/screenshoot/admin2.png?raw=true "Admin")
+![Admin](/screenshoot/admin3.png?raw=true "Admin")
 ## FEATURES :
 - :white_check_mark: Native PHP (Without any framework) :baby_chick:
 - :white_check_mark: Thin & Fast :zap:
