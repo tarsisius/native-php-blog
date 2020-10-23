@@ -1,6 +1,6 @@
 # NATIVE PHP BLOG PLATFORM :elephant:
 ## SCREENSHOT :
-![Homepage](/screenshot/home.png?raw=true "Homepage")
+![Homepage](/screenshoot/home.png?raw=true "Homepage")
 ## FEATURES :
 - :white_check_mark: Native PHP (Without any framework) :baby_chick:
 - :white_check_mark: Thin & Fast :zap:
